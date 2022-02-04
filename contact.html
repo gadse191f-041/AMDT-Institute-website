@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>AMDT </title>
+
+    <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style type="text/css">
+      
+      table
+      {
+          border: 3px solid rgb(82, 151, 207);
+      }
+      table th
+      {
+          background-color: #27258f;
+          color: #333;
+          font-weight: bold;
+      }
+      table th, table td
+      {
+          padding: 10px;
+          border-color: rgb(17, 16, 16);
+      }
+  </style>
+  </head>
+  <body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke px-0">
+          <h1> <a class="navbar-brand" href="index.html">
+              <img src="assets/images/amdt_logo_2.png" alt="amdt_logo_2.png"width="180px" /> AMDT
+              </a></h1>
+          <!-- if logo is image enable this   
+  <a class="navbar-brand" href="#index.html">
+      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+  </a> -->
+          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item @@home__active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                    <a class="nav-link" href="creative.html">Creative</a>
+                </li>
+                  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="about.html">QUIZ</a>
+                  </li>
+                  <li class="nav-item @@menu__active">
+                      <a class="nav-link" href="menu.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <!--/search-right-->
+                  <div class="search-right">
+                      <a href="#search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
+                      <!-- search popup -->
+                      <div id="search" class="pop-overlay">
+                          <div class="popup">
+                              <h4 class="mb-3">Search here</h4>
+                              <form action="error.html" method="GET" class="search-box">
+                                  <input type="search" placeholder="Enter Keyword" name="search" required="required"
+                                      autofocus="">
+                                  <button type="submit" class="btn btn-style btn-primary">Search</button>
+                              </form>
+
+                          </div>
+                          <a class="close" href="#close">×</a>
+                      </div>
+                      <!-- /search popup -->
+                  </div>
+                  <!--//search-right-->
+              </ul>
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+  </div>
+</header>
+<!--/header-->
+<section class="w3l-about-breadcrumb">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container py-lg-5 py-md-3">
+            <h2 class="title">Contact Us</h2>
+        </div>
+    </div>
+</section>
+<!-- contacts -->
+<section class="w3l-contact-7 py-5" id="contact">
+    <div class="contacts-9 py-lg-5 py-md-4">
+        <div class="container">
+            <div class="top-map">
+                <div class="row map-content-9">
+                    <div class="col-lg-8">
+                        <h3 class="title-big">Get in touch with us</h3>
+                        <p class="mb-4 mt-lg-0 mt-2">Your email address will not be published. Required fields are marked *</p>
+
+                        <form action = "#" name = "myForm" onsubmit = "return(validate());">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                              <td>
+                                  First Name:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "FName" id="txtFirstName" value="" placeholder="Name*" required=""/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Last Name:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "LName"id="txtLastName" value="" placeholder="Last name*" required=""/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Subject:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "Subject"id="subject" value=""placeholder="Subject*" required="" />
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Email:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "Email"id="email" value="" placeholder="Email*" required="" />
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Phone:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "Phone" id="phone" value=""placeholder="Phone*" required="" />
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="button" value="Open Popup" onclick="OpenPopup()" />
+                              </td>
+                              <td>
+                                  <input type="button" value="Send" onclick="SendToPopup()" />
+                              </td>
+                          </tr>
+                          <tr>
+                            <td align = "center"></td>
+                            <td><input type = "submit" value = "Submit" /></td>
+                         </tr>
+                      </table>
+                    </form>
+
+                	<script>
+			function GEEKFORGEEKS() {
+				var name =
+					document.forms["RegForm"]["Name"];
+				var email =
+					document.forms["RegForm"]["EMail"];
+				var phone =
+					document.forms["RegForm"]["Telephone"];
+				var what =
+					document.forms["RegForm"]["Subject"];
+				var password =
+					document.forms["RegForm"]["Password"];
+				var address =
+					document.forms["RegForm"]["Address"];
+
+				if (name.value == "") {
+					window.alert("Please enter your name.");
+					name.focus();
+					return false;
+				}
+
+				if (address.value == "") {
+					window.alert("Please enter your address.");
+					address.focus();
+					return false;
+				}
+
+				if (email.value == "") {
+					window.alert(
+					"Please enter a valid e-mail address.");
+					email.focus();
+					return false;
+				}
+
+				if (phone.value == "") {
+					window.alert(
+					"Please enter your telephone number.");
+					phone.focus();
+					return false;
+				}
+
+				if (password.value == "") {
+					window.alert("Please enter your password");
+					password.focus();
+					return false;
+				}
+
+				if (what.selectedIndex < 1) {
+					alert("Please enter your course.");
+					what.focus();
+					return false;
+				}
+
+				return true;
+			}
+		</script>
+
+		
+	</head>
+
+	<body>
+		<h1 style="text-align: center;">REGISTRATION FORM</h1>
+		<form name="RegForm" action="#"
+			onsubmit="return GEEKFORGEEKS()" method="post">
+			<p>Name: <input type="text"
+							size="65" name="Name" /></p>
+			<br />
+			<p>Address: <input type="text"
+							size="65" name="Address" />
+		</p>
+			<br />
+			<p>E-mail Address: <input type="text"
+							size="65" name="EMail" /></p>
+			<br />
+			<p>Password: <input type="text"
+						size="65" name="Password" /></p>
+			<br />
+			<p>Telephone: <input type="text"
+						size="65" name="Telephone" /></p>
+			<br />
+
+			<p>
+				SELECT YOUR COURSE
+				<select type="text" value="" name="Subject">
+					<option>BTECH</option>
+					<option>BBA</option>
+					<option>BCA</option>
+					<option>B.COM</option>
+					<option>GEEKFORGEEKS</option>
+				</select>
+			</p>
+			<br />
+			<br />
+			
+				<input type="submit"
+					value="send" name="Submit" />
+				<input type="reset"
+					value="Reset" name="Reset" />
+			</p>
+		</form>
+
+
+                      <script type="text/javascript">
+                          var popup;
+                          function OpenPopup() {
+                              popup = window.open("Popup.html", "Popup", "width=300,height=300,display=center" );
+                          };
+                          function SendToPopup() {
+                              if (popup != null && !popup.closed) {
+                                  var lblFirstName = popup.document.getElementById("lblFirstName");
+                                  var lblLastName = popup.document.getElementById("lblLastName");
+                                  var subject = popup.document.getElementById("subject");
+                                  var email = popup.document.getElementById("email");
+                                  var phone = popup.document.getElementById("phone");
+                                  lblFirstName.innerHTML = document.getElementById("txtFirstName").value;
+                                  lblLastName.innerHTML = document.getElementById("txtLastName").value;
+                                  subject.innerHTML = document.getElementById("subject").value;
+                                  email.innerHTML = document.getElementById("email").value;
+                                  phone.innerHTML = document.getElementById("phone").value;
+                                  popup.focus();
+                              } else {
+                                  alert("Data Updated clearly!!!" 
+                                  );
+                              }
+                          }
+                      </script>
+                      
+
+                    </div>
+                    <div class="col-lg-4 cont-details">
+                        <address>
+                            <h5 class="mt-md-5 mt-4">Contact Address</h5>
+                            <p><span class="fa fa-map-marker"></span>208 Trainer Avenue street, Corner
+                                Market, NY - 62617. </p>
+                            <p> <a href="mailto:info@example.com"><span
+                                        class="fa fa-envelope"></span>info@example.com</a></p>
+                            <p><span class="fa fa-phone"></span><a href="tel:+12 5348943649"> +12 534894364</a></p>
+
+                            <h5 class="mt-4 mb-3">Opening Hours</h5>
+                            <div class="hours">
+                                <p><span class="fa fa-clock-o"></span>10:00am - 09:00pm</p>
+                                <p>Sunday Closed</p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //contacts -->
+
+<!-- footer -->
+<footer class="py-5">
+  <div class="container py-xl-4">
+    <div class="row footer-top">
+      <div class="col-lg-4 footer-grid_section_1its footer-text">
+        <!-- logo -->
+        <h2>
+          <a class="logo text-wh" href="index.html">
+            <img src="assets/images/burger.png" alt="burger logo" width="35px" /> AMDT
+          </a>
+        </h2>
+        <!-- //logo -->
+        <p class="mt-lg-4 mt-3 mb-4 pb-lg-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem perspiciatis autem, porro quaerat cumque numquam libero dicta maxime labore nemo nisi consequuntur provident vel. Fugiat sint rerum asperiores. Tempore, fugit!.</p>
+        <!-- social icons -->
+        <ul class="top-right-info">
+          <li>
+            <p>Follow us:</p>
+          </li>
+          <li class="facebook-w3">
+            <a href="#facebbok">
+              <span class="fa fa-facebook-f"></span>
+            </a>
+          </li>
+          <li class="twitter-w3">
+            <a href="#twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
+          </li>
+          <li class="google-w3">
+            <a href="#google">
+              <span class="fa fa-google-plus"></span>
+            </a>
+          </li>
+          <li class="dribble-w3">
+            <a href="#dribble">
+              <span class="fa fa-dribbble"></span>
+            </a>
+          </li>
+        </ul>
+        <!-- //social icons -->
+      </div>
+      <div class="col-lg-4 col-sm-6 footer-grid_section_1its mt-lg-0 mt-5">
+        <div class="footer-title">
+          <h3>Contact Us</h3>
+        </div>
+        <div class="footer-text mt-4">
+          <p><strong>Address :</strong>  208 Trainer Avenue street, Corner
+            Market, NY - 62617.</p>
+          <p class="my-2"><strong>Phone :</strong> <a href="tel:+12 534894364">+12 534894364</a></p>
+          <p><strong>Email :</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+        <div class="footer-title mt-4 pt-md-2">
+          <h3>Payments we accept</h3>
+        </div>
+        <ul class="list-unstyled payment-links mt-4">
+          <li>
+            <a href="#payment"><img src="assets/images/pay2.png" class="radius-image" width="55px" alt=""></a>
+          </li>
+          <li>
+            <a href="#payment"><img src="assets/images/pay5.png" class="radius-image" width="55px" alt=""></a>
+          </li>
+          <li>
+            <a href="#payment"><img src="assets/images/pay1.png" class="radius-image" width="55px" alt=""></a>
+          </li>
+          <li>
+            <a href="#payment"><img src="assets/images/pay4.png" class="radius-image" width="55px" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 footer-grid_section_1its footer-text mt-lg-0 mt-5">
+        <div class="footer-title">
+          <h3>Subscribe Newsletter</h3>
+        </div>
+        <div class="info-form-right mt-4 p-0">
+          <p class="mb-4">Enter your email and receive the latest news, updates and special offers from us.</p>
+          <form action="#" method="post">
+            <div class="form-group mb-2">
+              <input type="email" class="form-control" name="Email" placeholder="Email" required="">
+            </div>
+            <button type="submit" class="btn btn-style btn-primary w-100 d-block ml-auto py-2">Subscribe</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- //footer -->
+<!-- copyright -->
+<div class="cpy-right text-center py-4">
+  <p>© 2021 AMDT. All rights reserved | Design by <a href="#"> AMDT.</a> </p>
+</div>
+<!-- //copyright -->
+
+ <!-- move top -->
+ <button onclick="topFunction()" id="movetop" title="Go to top">
+  <span class="fa fa-level-up" aria-hidden="true"></span>
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+
+<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+
+<script src="assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+<script src="assets/js/owl.carousel.js"></script><!-- owl carousel -->
+
+<!-- script for tesimonials carousel slider -->
+<script>
+  $(document).ready(function () {
+    $("#owl-demo1").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 1,
+          nav: false,
+          loop: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for tesimonials carousel slider -->
+
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+<script src="assets/js/counter.js"></script>
+
+<!-- gallery popup js -->
+<script src="assets/js/smartphoto.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sm = new SmartPhoto(".js-img-viwer", {
+      showAnimation: false
+    });
+    // sm.destroy();
+  });
+</script>
+<!-- //gallery popup js -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- //disable body scroll which navbar is in active -->
+
+<!--bootstrap-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- //bootstrap-->
+
+</body>
+
+</html>
